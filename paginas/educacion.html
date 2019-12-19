@@ -115,23 +115,104 @@
 	<p>
 	<nav><a href="../index.html">Volver al Inicio</a> | <a href="experiencia.html">Experiencia</a></nav>
 		<h1>Education</h1>
-		<ul>
-			<h3>TECNICATURA EN PUBLICIDAD PROGRAMÁTICA (MARKETING Y PUBLICIDAD DIGITAL) | AÑO 2019 | IEDGE BUSINESS SCHOOL</h3>
-				<li>Técnico Avanzado en Publicidad Programática (PROM 9.8)</li>
-			<h3>CERTIFICACIÓN INTERNACIONAL | EN CURSO | NEXT U</h3>
-				<li>Full Stack Developer</li>
-			<h3>CERTIFICACIÓN INTERNACIONAL | AÑO 2013 | E-PLANNING</h3>
-				<li>Trafficking Ad-Server</li>
-				<li>Trafficking & Trading E-Planning Exchange</li>
-			<h3>CURSO DE PROGRAMACION JAVA | 2011 | EDUCACION IT</h3>
-				<li>JAVA</li>
-			<h3>CURSO DE LENGUAJES WEB | 2011 | EDUCACION IT</h3>
-				<li>HTML, PHP, JavaScript.</li>
-				<li>Bases de datos SQL</li>
-			<h3>PROGRAMADOR |AÑO 2012| FACULTAD DE INGENIERÍA DEL EJÉRCITO GRL. DIV. MANUEL N. SAVIO</h3>
-				<li>Assembler, C, C++</li>
-			<h3>BACHILLER CON MODALIDAD EN HUMANIDADES Y CIENCIAS SOCIALES |AÑO 2006| INSTITUTO SOCIAL MILITAR “DR” DÁMASO CENTENO</h3>	
-		</ul>
+		<table border="2", cellpadding="10" cellspacing="0">
+			<thead>
+				<tr><strong>
+					<td><strong>AÑO</strong></td>
+					<td><strong>MES</strong></td>
+					<td><strong>INSTITUCIÓN</strong></td>
+					<td><strong>LUGAR</strong></td>
+					<td><strong>¿CULMINÓ?</strong></td>	
+					<td><strong>TÍTULO</strong></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2019</td>
+					<td>Julio</td>
+					<td>IEDGE Bussines School</td>
+					<td>Argentina</td>
+					<td>SI</td>
+					<td>Técnico en Publicidad Programática Avanzada</td>
+				</tr>
+				<tr>
+					<td>2013</td>
+					<td>Noviembre</td>
+					<td>E-Planning</td>
+					<td>Colombia</td>
+					<td>SI</td>
+					<td>Técnico Especializado en E-Planning AdServer</td>
+				</tr>
+				<tr>
+					<td>2019</td>
+					<td>Diciembre</td>
+					<td>Facultad de Defensa Nacional</td>
+					<td>Argentina</td>
+					<td>En Proceso</td>
+					<td>Ingeniero Informático</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>2011</td>
+					<td>Noviembre</td>
+					<td>ISM "DR Dámaso Centeno"</td>
+					<td>Argentina</td>
+					<td>SI</td>
+					<td>Bachiller con modalidad en Humanística y Cs Sociales</td>
+				</tr>
+			</tfoot>
+		</table>
+		<br>
+		<br>
+		<form autocomplete="on" name="Imputs para Educación">
+			<fieldset>
+				<h1>Agregar Estudios</h1>
+						<h5><p>
+						<br><label for="Año">Año:</label> 
+						<br><input type="number" min="1900" max="2020" required="number"> 
+						<label for="Mes">Mes</label>
+							<select name="Meses del año" id="#Meses_del_año">
+								<option value="Enero">Enero</option>
+								<option value="Febrero">Febrero</option>
+								<option value="Marzo">Marzo</option>
+								<option value="Abril">Abril</option>
+								<option value="Mayo">Mayo</option>
+								<option value="Junio">Junio</option>
+								<option value="Julio">Julio</option>
+								<option value="Agosto">Agosto</option>
+								<option value="Septiembre">Septiembre</option>
+								<option value="Octubre">Octubre</option>
+								<option value="Noviembre">Noviembre</option>
+								<option value="Diciembre">Diciembre</option>
+							</select>
+						<br>
+						<br><label for="Institución">Institución:</label>
+						<br><input type="text" id="Coloque nombre de la institución aquí" placeholder="Ejemplo: Universidad Tecnológica Nacional" required="text">
+						<br>
+						<br><label for="Lugar">País:</label>
+						<br><input type="text" id="País" placeholder="Ejemplo: Argetina, Colombia, etc" required="text">
+						<br>
+						<br><label for="Finalización de Estudios">Culminó?:</label>
+						<br><input type="checkbox" id="Si">SI
+							<select>
+								<option vaue="checkbox" id="No">No y dudo que continúe</option>
+								<option value="checkbox" id="En Proceso" disabled>En Proceso, la voy a terminar</option> <!--En esta parte quise simular un caso donde acepte el tick del SI y por ende estos valores deberian cancelarse. Por lo que me indicaron los profesores no se puede hacer, pero si simular para este ejemplo con un disabled-->
+							</select>
+						<br>
+						<br><label for="Título">Título:</label>
+						<br><input type="text" id="Título" placeholder="Ejemplo: Abogado" required="text">
+						<br>
+						<br><label for="Cargar_Educacion">Cargar Educación:</label>
+						<br><input type="submit" value="Cargar">
+						<br>
+
+			</fieldset>
+		</form>
 	</p>
+	<footer>
+		<h3>Informacion de contacto:</h3>
+		<h5><em>Email: juanmartin.marina@gmail.com</em></h5>
+	</footer>
 </body>
 </html>
